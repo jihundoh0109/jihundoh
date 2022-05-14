@@ -9,15 +9,38 @@
   color: white;
 }
 
+.collapseNavbar {
+  margin: 0.2rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
 .logo {
   width: 3rem;
   height: 3rem;
 }
 
+.menu {
+  position: absolute;
+  margin-left: 1rem;
+}
+
 .menu li {
   list-style: none;
   display: inline;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
+}
+
+.menu li:not(:last-child)::after {
+  content: "";
+  border: 1px solid #e2e2e2;
+  border-width: 1px 1px 0 0;
+  margin-left: 1.5rem;
 }
 
 .collapsemenu li :hover {
@@ -39,16 +62,35 @@
     display: block;
     float: right;
   }
+
+  .collapseNavbar {
+    margin-bottom: 8rem;
+  }
+
   .collapsemenu {
-    margin-top: 12rem;
+    margin-top: 4.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 0;
   }
   .collapsemenu li {
     list-style: none;
     margin-top: 0.5rem;
+    animation: collapsemenu 1s ease-out;
   }
   .collapsemenu li :hover {
     color: #44D3AC;
     transition: 0.3s;
+  }
+}
+
+@keyframes collapsemenu {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
@@ -58,9 +100,21 @@
     transition: 0.3s;
   }
   
+  .collapsemenu {
+    position: absolute;
+    margin-left: 1rem;
+  }
+
   .collapsemenu li {
     list-style: none;
     display: inline;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+  }
+
+  .collapsemenu li:not(:last-child)::after {
+    content:"";
+    border: 1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    margin-left: 1.5rem;
   }
 }

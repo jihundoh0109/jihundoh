@@ -6,16 +6,17 @@ import icon from '../public/temp.png';
 
 // navigation bar
 function Navigation() {
-  const [toggleClicked, setToggleClicked] = useState(false);
+  const [menuIconClicked, setMenuIconClicked] = useState(false);
 
-  const onToggleBar = () => {
-    setToggleClicked(!toggleClicked);
+  // when user clicks menu icon (for screen size < 600px)
+  const onMenuIconClick = () => {
+    setMenuIconClicked(!menuIconClicked);
   };
 
   return (
-    <nav className={classes.navbar}>
+    <nav className={menuIconClicked ? classes.collapseNavbar : classes.navbar}>
       <Image src={icon} alt="image" width="40px" height="40px" />
-      <ul className={toggleClicked ? classes.collapsemenu : classes.menu} id="menu">
+      <ul className={menuIconClicked ? classes.collapsemenu : classes.menu} id="menu">
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -36,7 +37,7 @@ function Navigation() {
         viewBox="0 0 24 24"
         stroke="currentColor"
         strokeWidth={2}
-        onClick={onToggleBar}
+        onClick={onMenuIconClick}
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
