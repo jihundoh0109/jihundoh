@@ -21,13 +21,13 @@ function Navigation() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <Link href="/">Projects</Link>
+          <Link href="/projects">Projects</Link>
         </li>
         <li>
-          <Link href="/">Resumé</Link>
+          <Link href="/resume">Resumé</Link>
         </li>
       </ul>
       <svg
