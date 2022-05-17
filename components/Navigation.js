@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import classes from './Navigation.module.css';
-import icon from '../public/temp.png';
+import icon from '../public/jd-logo.png';
 
 // navigation bar
 function Navigation() {
@@ -15,7 +15,9 @@ function Navigation() {
 
   return (
     <nav className={menuIconClicked ? classes.collapseNavbar : classes.navbar}>
-      <Image src={icon} alt="image" width="40px" height="40px" />
+      <a href="/d" className={classes.logo}>
+        <Image src={icon} alt="image" width="40px" height="40px" />
+      </a>
       <ul className={menuIconClicked ? classes.collapsemenu : classes.menu} id="menu">
         <li>
           <Link href="/">Home</Link>

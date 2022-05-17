@@ -1,8 +1,8 @@
 .col {
   width: 50%;
   float: left;
-  border: 2px solid white;
   height: 100%;
+  border: 2px solid white;
 }
 
 .name {
@@ -84,10 +84,14 @@
   float: right;
 }
 
+.buttons button {
+  margin-top: 0.5rem;
+}
+
 @media screen and (max-width: 600px) {
   .col {
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: 100%;
   }
 
@@ -95,7 +99,7 @@
     font-size: 65px;
     text-align: left;
     font-weight: 600;
-    margin-top: 120px;
+    margin-top: 15px;
     margin-left: 1rem;
   }
   
@@ -113,15 +117,37 @@
   }
   
   .buttons {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 1rem;
   }
+}
 
-  .email-button {
-    margin-top: 1rem;
-    padding: 0;
-    border-radius: 7px;
-    background-color: #CCB764;
-    border: #CCB764;
-  }
+.square {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  background: white;
+  border-radius: 30px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.blocks {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 7.4rem;
+}
+
+.headshot {
+  border-radius: 30px;
+}
+
+.headshot-wrapper {
+  margin-left: -5px;
+  margin-right: 5px;
 }

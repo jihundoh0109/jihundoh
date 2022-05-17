@@ -16,14 +16,15 @@
   padding: 20px;
 }
 
-.logo {
-  width: 3rem;
-  height: 3rem;
+.logo:hover {
+  filter: invert(35%) sepia(68%) saturate(380%) hue-rotate(107deg) brightness(88%) contrast(91%);
+  transition: 0.3s;
 }
 
 .menu {
   position: absolute;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
+  padding: 0;
 }
 
 .menu li {
@@ -98,7 +99,8 @@
   
   .collapsemenu {
     position: absolute;
-    margin-left: 1rem;
+    margin-left: 3.5rem;
+    padding: 0;
   }
 
   .collapsemenu li {

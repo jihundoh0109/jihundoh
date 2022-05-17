@@ -5,6 +5,7 @@ import classes from '../styles/Home.module.css';
 import github from '../public/github-logo.png';
 import linkedin from '../public/linkedin-logo.png';
 import email from '../public/email-logo.png';
+import doh from '../public/doh.jpg';
 
 function Home() {
   return (
@@ -44,7 +45,12 @@ function Home() {
         </div>
       </div>
       <div className={classes.col}>
-        2
+        <div className={classes.blocks}>
+          <div className={classes.square} />
+          <div className={classes['headshot-wrapper']}>
+            <Image className={classes.headshot} src={doh} alt="doh" width="360px" height="360px" />
+          </div>
+        </div>
       </div>
     </div>
   );
