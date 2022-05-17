@@ -1,4 +1,4 @@
-.row {
+.col {
   width: 50%;
   float: left;
   border: 2px solid white;
@@ -26,4 +26,102 @@
   width: 65%;
   margin-top: 2rem;
   margin-left: 6.2rem;
+}
+
+.buttons {
+  margin-left: 6.2rem;
+  margin-top: 2rem;
+}
+
+.image-wrapper {
+  margin-top: 3px;
+  margin-left: 0.8rem;
+  float: left;
+}
+
+.github-button {
+  padding: 0;
+  border-radius: 7px;
+  background-color: white;
+  border: white;
+  margin-right: 1.3rem;
+}
+
+.github-text {
+  margin-top: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+  float: right;
+}
+
+.linkedin-button {
+  padding: 0;
+  border-radius: 7px;
+  background-color: #0274b3;
+  border: #0274b3;
+  color: white;
+  margin-right: 1.3rem;
+}
+
+.linkedin-text {
+  margin-top: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+  float: right;
+}
+
+.email-button {
+  padding: 0;
+  border-radius: 7px;
+  background-color: #CCB764;
+  border: #CCB764;
+}
+
+.email-text {
+  margin-top: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    border: 2px solid white;
+    height: 100%;
+  }
+
+  .name {
+    font-size: 65px;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 120px;
+    margin-left: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 70;
+    margin-left: 1rem;
+  }
+  
+  .line {
+    width: 85%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .email-button {
+    margin-top: 1rem;
+    padding: 0;
+    border-radius: 7px;
+    background-color: #CCB764;
+    border: #CCB764;
+  }
 }
