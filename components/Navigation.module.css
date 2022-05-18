@@ -47,14 +47,15 @@
 
 .toggle {
   display: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.7rem;
+  height: 1.7rem;
 }
 
 @media screen and (max-width: 600px) {
   .menu li {
     display: none;
   }
+
   .toggle {
     display: block;
     float: right;
@@ -74,20 +75,30 @@
   .collapsemenu li {
     list-style: none;
     margin-top: 0.5rem;
-    animation: collapsemenu 1s ease-out;
   }
   .collapsemenu li :hover {
     color: #44D3AC;
     transition: 0.3s;
   }
-}
 
-@keyframes collapsemenu {
-  0% {
-    transform: translateX(-50%);
+  .clicked-first-line {
+    transform: rotate(45deg);
+    transition: 1s;
   }
-  100% {
-    transform: translateX(0%);
+
+  .clicked-second-line {
+    transform: rotate(-45deg) translateX(7px) translateY(-7px);
+    transition: 1s;
+  }
+
+  .first-line {
+    transform: rotate(0deg);
+    transition: 1s;
+  }
+
+  .second-line {
+    transform: rotate(0deg);
+    transition: 1s;
   }
 }
 

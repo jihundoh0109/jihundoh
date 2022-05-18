@@ -7,42 +7,57 @@ import icon from '../public/jd-logo.png';
 // navigation bar
 function Navigation() {
   const [menuIconClicked, setMenuIconClicked] = useState(false);
+  const [lightModeClicked, setLightModeClicked] = useState(false);
 
   // when user clicks menu icon (for screen size < 600px)
   const onMenuIconClick = () => {
     setMenuIconClicked(!menuIconClicked);
   };
 
+  // when user clicks on toggle switch to change theme (dark/light mode)
+  const onLightModeClicked = () => {
+    setLightModeClicked(!lightModeClicked);
+  }
+
   return (
     <nav className={menuIconClicked ? classes.collapseNavbar : classes.navbar}>
-      <a href="/d" className={classes.logo}>
+      <a href="/" className={classes.logo}>
         <Image src={icon} alt="image" width="40px" height="40px" />
       </a>
       <ul className={menuIconClicked ? classes.collapsemenu : classes.menu} id="menu">
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">
+            <a>
+              Home
+            </a>
+          </Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <a>
+              About
+            </a>
+          </Link>
         </li>
         <li>
-          <Link href="/projects">Projects</Link>
+          <Link href="/projects">
+            <a>
+              Projects
+            </a>
+          </Link>
         </li>
         <li>
-          <Link href="/resume">Resumé</Link>
+          <Link href="/resume">
+            <a>
+              Resumé
+            </a>
+          </Link>
         </li>
       </ul>
-      <svg
-        className={classes.toggle}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth={2}
-        onClick={onMenuIconClick}
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+      <div className={classes.toggle} onClick={onMenuIconClick}>
+        <hr className={menuIconClicked ? classes['clicked-first-line'] : classes['first-line']} />
+        <hr className={menuIconClicked ? classes['clicked-second-line'] : classes['second-line']} />
+      </div>
     </nav>
   );
 }
