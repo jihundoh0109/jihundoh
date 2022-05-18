@@ -1,24 +1,15 @@
-.navbar {
-  margin: 0.2rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.collapseNavbar {
-  margin: 0.2rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
 .logo:hover {
   filter: invert(35%) sepia(68%) saturate(380%) hue-rotate(107deg) brightness(88%) contrast(91%);
   transition: 0.3s;
+}
+
+.navbar, .collapseNavbar {
+  margin: 0.2rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .menu {
@@ -40,12 +31,12 @@
   margin-left: 1.5rem;
 }
 
-.collapsemenu li :hover {
+.collapsemenu li:hover, .menu li:hover {
   color: #44D3AC;
   transition: 0.3s;
 }
 
-.toggle {
+.toggle-icon {
   display: none;
   width: 1.7rem;
   height: 1.7rem;
@@ -56,7 +47,7 @@
     display: none;
   }
 
-  .toggle {
+  .toggle-icon {
     display: block;
     float: right;
   }
@@ -67,18 +58,14 @@
 
   .collapsemenu {
     margin-top: 4.5rem;
-    display: block;
     position: absolute;
     top: 0;
     padding: 0;
   }
+
   .collapsemenu li {
     list-style: none;
     margin-top: 0.5rem;
-  }
-  .collapsemenu li :hover {
-    color: #44D3AC;
-    transition: 0.3s;
   }
 
   .clicked-first-line {
@@ -91,23 +78,13 @@
     transition: 1s;
   }
 
-  .first-line {
-    transform: rotate(0deg);
-    transition: 1s;
-  }
-
-  .second-line {
+  .first-line, .second-line {
     transform: rotate(0deg);
     transition: 1s;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu li :hover {
-    color: #44D3AC;
-    transition: 0.3s;
-  }
-  
   .collapsemenu {
     position: absolute;
     margin-left: 3.5rem;

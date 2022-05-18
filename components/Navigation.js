@@ -17,7 +17,7 @@ function Navigation() {
   // when user clicks on toggle switch to change theme (dark/light mode)
   const onLightModeClicked = () => {
     setLightModeClicked(!lightModeClicked);
-  }
+  };
 
   return (
     <nav className={menuIconClicked ? classes.collapseNavbar : classes.navbar}>
@@ -54,7 +54,7 @@ function Navigation() {
           </Link>
         </li>
       </ul>
-      <div className={classes.toggle} onClick={onMenuIconClick}>
+      <div className={classes['toggle-icon']} onClick={onMenuIconClick}>
         <hr className={menuIconClicked ? classes['clicked-first-line'] : classes['first-line']} />
         <hr className={menuIconClicked ? classes['clicked-second-line'] : classes['second-line']} />
       </div>

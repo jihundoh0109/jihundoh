@@ -17,7 +17,7 @@ function Home() {
         <div className={classes.buttons}>
           {/* github button */}
           <Link href="https://github.com/jihundoh0109" passHref className={classes.link} >
-            <a>
+            <a target="_blank" rel="noreferrer">
               <button className={classes['github-button']}>
                 <div className={classes['image-wrapper']}>
                   <Image className={classes['github-logo']} src={github} alt="github-logo" width="20px" height="20px" />
@@ -28,7 +28,7 @@ function Home() {
           </Link>
           {/* linkedin button */}
           <Link href="https://www.linkedin.com/in/jihun-doh/" passHref className={classes.link}>
-            <a>
+            <a target="_blank" rel="noreferrer">
               <button className={classes['linkedin-button']}>
                 <div className={classes['image-wrapper']}>
                   <Image src={linkedin} alt="linkedin-logo" width="20px" height="20px" />
