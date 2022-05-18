@@ -13,15 +13,13 @@
 }
 
 .menu {
-  position: absolute;
-  margin-left: 3.5rem;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .menu li {
   list-style: none;
-  display: inline;
-  margin-left: 1.5rem;
 }
 
 .menu li:not(:last-child)::after {
@@ -29,6 +27,7 @@
   border: 1px solid #e2e2e2;
   border-width: 1px 1px 0 0;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .collapsemenu li:hover, .menu li:hover {
@@ -48,8 +47,7 @@
   }
 
   .toggle-icon {
-    display: block;
-    float: right;
+    display: inline;
   }
 
   .collapseNavbar {
@@ -84,23 +82,22 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
   .collapsemenu {
-    position: absolute;
-    margin-left: 3.5rem;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   .collapsemenu li {
     list-style: none;
-    display: inline;
-    margin-left: 1.5rem;
   }
 
   .collapsemenu li:not(:last-child)::after {
-    content:"";
+    content: "";
     border: 1px solid #e2e2e2;
     border-width: 1px 1px 0 0;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
