@@ -1,0 +1,72 @@
+.container {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 2fr 1fr 1fr;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+@keyframes circleOneAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(10vh);
+  }
+}
+
+@keyframes circleTwoAnimation {
+  0% {
+    transform: translate(10vh, -100%);
+  } 100% {
+    transform: translate(10vh, 12vh);
+  }
+}
+
+@keyframes circleThreeAnimation {
+  0% {
+    transform: translate(100%, 50vh);
+  } 100% {
+    transform: translate(0%, 50vh);
+  }
+}
+.circle-one {
+  height: 90vh;
+  width: 90vh;
+  background-color: #44D3AC;
+  clip-path: circle(50% at 11% 78%);
+  transform: translateY(10vh);
+  animation: 1s ease circleOneAnimation
+}
+
+.circle-two {
+  height: 30vh;
+  width: 30vh;
+  background-color: #44D3AC;
+  border-radius: 50%;
+  transform: translate(10vh, 12vh);
+  animation: 1s ease circleTwoAnimation
+}
+
+.circle-three {
+  justify-self: end;
+  height: 50vh;
+  width: 50vh;
+  background-color: #44D3AC;
+  clip-path: circle(46.1% at 86% 51%);
+  transform: translateY(50vh);
+  animation: 1s ease circleThreeAnimation;
+}
+
+@media screen and (max-width: 890px) {
+  .container {
+    display: none;
+  }
+}
+
+

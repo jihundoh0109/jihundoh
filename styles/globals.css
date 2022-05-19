@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
-  font-family: 'proxima-nova', sans-serif;
+  font-family: 'proxima-nova', monospace;
   font-weight: 200;
   font-style: normal;
   color: white;
@@ -18,4 +18,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 890px) {
+  body {
+    overflow-x: hidden;
+  }
 }

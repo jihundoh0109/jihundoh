@@ -2,6 +2,9 @@
   display: flex;
   margin-top: 7rem;
   justify-content: space-around;
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 .col-one {
@@ -26,6 +29,7 @@
 }
 
 .line {
+  border: white 0.7px solid;
   width: 450px;
   margin-left: 0;
   margin-top: 1.3rem;
@@ -33,7 +37,7 @@
 }
 
 .buttons {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .image-wrapper {
