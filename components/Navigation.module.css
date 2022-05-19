@@ -30,7 +30,7 @@
   margin-right: 1.5rem;
 }
 
-.collapsemenu li:hover, .menu li:hover {
+.collapsemenu li a:hover, .menu li a:hover {
   color: #44D3AC;
   transition: 0.3s;
 }

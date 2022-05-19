@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import classes from './Navigation.module.css';
-import icon from '../public/jd-logo.png';
+import icon from '../public/favicon.ico';
 
 // navigation bar
 function Navigation() {
