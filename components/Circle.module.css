@@ -10,31 +10,6 @@
   z-index: 1;
 }
 
-@keyframes circleOneAnimation {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(10vh);
-  }
-}
-
-@keyframes circleTwoAnimation {
-  0% {
-    transform: translate(10vh, -100%);
-  } 100% {
-    transform: translate(10vh, 12vh);
-  }
-}
-
-@keyframes circleThreeAnimation {
-  0% {
-    transform: translate(100%, 50vh);
-  } 100% {
-    transform: translate(0%, 50vh);
-  }
-}
 .circle-one {
   height: 90vh;
   width: 90vh;
@@ -61,6 +36,36 @@
   clip-path: circle(46.1% at 86% 51%);
   transform: translateY(50vh);
   animation: 1s ease circleThreeAnimation;
+}
+
+@keyframes circleOneAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(10vh);
+  }
+}
+
+@keyframes circleTwoAnimation {
+  0% {
+    transform: translate(10vh, -100%);
+  }
+
+  100% {
+    transform: translate(10vh, 12vh);
+  }
+}
+
+@keyframes circleThreeAnimation {
+  0% {
+    transform: translate(100%, 50vh);
+  }
+
+  100% {
+    transform: translate(0%, 50vh);
+  }
 }
 
 @media screen and (max-width: 890px) {
