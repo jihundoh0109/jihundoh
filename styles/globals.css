@@ -5,11 +5,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
-  font-family: 'proxima-nova',
-  sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-weight: 200;
   font-style: normal;
-  color: white
+  color: white;
 }
 
 a {

@@ -9,19 +9,19 @@ import doh from '../public/doh.jpg';
 
 function Home() {
   return (
-    <div>
-      <div className={classes.col}>
+    <div className={classes.container}>
+      <div className={classes['col-one']}>
         <h1 className={classes.name}>Jihun Doh</h1>
         <h3 className={classes.subtitle}>Full Stack Developer</h3>
         <hr className={classes.line} />
         <div className={classes.buttons}>
           {/* github button */}
-          <Link href="https://github.com/jihundoh0109" passHref className={classes.link} >
+          <Link href="https://github.com/jihundoh0109" passHref className={classes.link}>
             <a target="_blank" rel="noreferrer">
               <button className={classes['github-button']}>
                 <div className={classes['image-wrapper']}>
-                  <Image className={classes['github-logo']} src={github} alt="github-logo" width="20px" height="20px" />
-                  <span className={classes['github-text']}>jihundoh0109</span>
+                  <Image className={classes['github-logo']} src={github} alt="github-logo" width="25px" height="25px" />
+                  <span>jihundoh0109</span>
                 </div>
               </button>
             </a>
@@ -31,8 +31,8 @@ function Home() {
             <a target="_blank" rel="noreferrer">
               <button className={classes['linkedin-button']}>
                 <div className={classes['image-wrapper']}>
-                  <Image src={linkedin} alt="linkedin-logo" width="20px" height="20px" />
-                  <span className={classes['linkedin-text']}>jihundoh</span>
+                  <Image src={linkedin} alt="linkedin-logo" width="25px" height="25px" />
+                  <span>jihundoh</span>
                 </div>
               </button>
             </a>
@@ -42,21 +42,21 @@ function Home() {
             <a>
               <button className={classes['email-button']}>
                 <div className={classes['image-wrapper']}>
-                  <Image src={email} alt="email-logo" width="20px" height="20px" />
-                  <span className={classes['email-text']}>email</span>
+                  <Image src={email} alt="email-logo" width="25px" height="25px" />
+                  <span>email</span>
                 </div>
               </button>
             </a>
           </Link>
         </div>
       </div>
-      <div className={classes.col}>
-        <div className={classes.blocks}>
-          <div className={classes.square} />
-          <div className={classes['headshot-wrapper']}>
-            <Image className={classes.headshot} src={doh} alt="doh" width="360px" height="360px" />
-          </div>
-        </div>
+      <div className={classes['col-two']}>
+        <Image
+          className={classes.headshot}
+          src={doh}
+          alt="doh"
+          layout="fill"
+        />
       </div>
     </div>
   );
