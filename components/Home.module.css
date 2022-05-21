@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  margin-top: 7rem;
   justify-content: space-around;
   position: relative;
   width: 100%;
@@ -102,6 +101,7 @@
   .container {
     flex-direction: column-reverse;
     margin-top: 3rem;
+    margin-bottom: 0;
     align-items: center;
   }
 

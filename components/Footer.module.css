@@ -1,9 +1,15 @@
 .footer {
-  margin-top: auto;
+  z-index: 2;
   text-align: center;
   padding-bottom: 1rem;
 }
 
 .link {
   color: #44D3AC;
+}
+
+@media screen and (max-width: 890px) {
+  .footer {
+    margin-top: 3rem;
+  }
 }

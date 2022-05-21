@@ -1,42 +1,38 @@
 .container {
-  display: grid;
-  justify-items: start;
-  grid-template-columns: 2fr 1fr 1fr;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  display: flex;
+  /* justify-content: start; */
+  height: 100vh;
+  /* width: 100vw; */
   z-index: 1;
+  position: absolute;
+  margin-bottom: auto;
 }
 
 .circle-one {
-  height: 90vh;
-  width: 90vh;
+  min-height: 700px;
+  min-width: 700px;
   background-color: #44D3AC;
   clip-path: circle(50% at 11% 78%);
-  transform: translateY(10vh);
-  animation: 1s ease circleOneAnimation
+  animation: 1s ease circleOneAnimation;
 }
 
 .circle-two {
-  height: 30vh;
-  width: 30vh;
+  height: 250px;
+  width: 250px;
   background-color: #44D3AC;
   border-radius: 50%;
-  transform: translate(10vh, 12vh);
   animation: 1s ease circleTwoAnimation
 }
 
-.circle-three {
+/* .circle-three {
   justify-self: end;
-  height: 50vh;
-  width: 50vh;
+  height: 390px;
+  width: 390px;
   background-color: #44D3AC;
   clip-path: circle(46.1% at 86% 51%);
   transform: translateY(50vh);
   animation: 1s ease circleThreeAnimation;
-}
+} */
 
 @keyframes circleOneAnimation {
   0% {
@@ -44,17 +40,17 @@
   }
 
   100% {
-    transform: translateY(10vh);
+    transform: translateY(0vh);
   }
 }
 
 @keyframes circleTwoAnimation {
   0% {
-    transform: translate(10vh, -100%);
+    transform: translateY(-100%);
   }
 
   100% {
-    transform: translate(10vh, 12vh);
+    transform: translateY(0vh);
   }
 }
 

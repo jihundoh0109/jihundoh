@@ -9,6 +9,7 @@ body {
   font-weight: 200;
   font-style: normal;
   color: white;
+  animation: hide-scroll 1s;
 }
 
 a {
@@ -20,10 +21,31 @@ a {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 891px) {
+@media screen and (min-width: 601px) {
   html,
   body {
     overflow-x: hidden;
     position: relative;
   }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+}
+
+@keyframes hide-scroll {
+  from,
+  to {
+    overflow: hidden;
+  }
+}
+
+body Home {
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
