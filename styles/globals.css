@@ -30,10 +30,13 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  html,
   body {
     overflow-x: hidden;
     position: relative;
     background-color: black;
+    height: 100%;
+
   }
 }
 
@@ -42,11 +45,4 @@ a {
   to {
     overflow: hidden;
   }
-}
-
-body Home {
-  border: 1px white solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
