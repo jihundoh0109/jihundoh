@@ -47,9 +47,9 @@ function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href="/resume">
+          <Link href="/blogs">
             <a>
-              Resumé
+              Blogs
             </a>
           </Link>
         </li>

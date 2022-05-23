@@ -11,7 +11,6 @@ function Main() {
         {/* todo */}
         <meta name="description" content="" />
         <meta name="author" content="Jihun Doh" />
-
       </Head>
       <Home />
     </div>
