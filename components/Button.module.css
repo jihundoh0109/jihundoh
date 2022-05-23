@@ -1,0 +1,36 @@
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.github-button,
+.linkedin-button,
+.email-button {
+  padding: 0;
+  border-radius: 7px;
+}
+
+.github-button {
+  background-color: white;
+  border: white;
+  margin-right: 1.3rem;
+  width: 145px;
+  color: black;
+}
+
+.linkedin-button {
+  background-color: #0274b3;
+  border: #0274b3;
+  color: white;
+  margin-right: 1.3rem;
+  width: 105px;
+}
+
+.email-button {
+  background-color: #CCB764;
+  border: #CCB764;
+  width: 93px;
+  color: black;
+}
