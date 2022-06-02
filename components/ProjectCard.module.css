@@ -1,0 +1,15 @@
+.card {
+  width: 330px;
+  height: 400px;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  color: #44D3AC;
+  font-weight: normal;
+}

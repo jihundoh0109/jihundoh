@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import ProjectCard from '../components/ProjectCard';
+import projects from '../data/projects.json';
 
 function Projects() {
   return (
@@ -11,6 +13,17 @@ function Projects() {
         <meta name="description" content="" />
         <meta name="author" content="Jihun Doh" />
       </Head>
+      <div>
+        {projects.map((data) => (
+          <ProjectCard
+            title={data.title}
+            img={data.img}
+            tools={data.tools}
+            description={data.description}
+            key={data.title}
+          />
+        ))}
+      </div>
     </div>
   );
 }
