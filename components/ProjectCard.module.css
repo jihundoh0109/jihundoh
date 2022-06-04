@@ -1,15 +1,44 @@
 .card {
-  width: 330px;
+  width: 280px;
   height: 400px;
   background: white;
   border-radius: 20px;
   color: black;
+  display: inline-block;
+}
+
+.card:hover {
+  background: #E0E0E0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .title {
   color: #44D3AC;
-  font-weight: normal;
+  font-weight: 500;
+  font-size: 27px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  border-radius: 7px;
+}
+.tools {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  white-space: normal;
 }

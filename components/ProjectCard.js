@@ -10,10 +10,18 @@ function ProjectCard({
 }) {
   return (
     <div className={classes.card}>
-      <h2 className={classes.title}>{title}</h2>
-      <Image src={img} alt="project image" width={300} height={100} />
-      <span>{tools}</span>
-      <p>{description}</p>
+      <div className={classes.container}>
+        <h2 className={classes.title}>{title}</h2>
+        <Image
+          className={classes.image}
+          src={img}
+          alt="project image"
+          width={330}
+          height={200}
+        />
+        <span className={classes.tools}>{tools}</span>
+        <p className={classes.description}>{description}</p>
+      </div>
     </div>
   );
 }

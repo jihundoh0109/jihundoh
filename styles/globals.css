@@ -25,7 +25,7 @@ a {
   body {
     overflow-x: hidden;
     position: relative;
-    background: linear-gradient(105deg, black, black 50%, #3d3d3d 50%, #3d3d3d);
+    background: linear-gradient(105deg, #252525, #252525 50%, #3d3d3d 50%, #3d3d3d);
   }
 }
 
@@ -34,7 +34,7 @@ a {
   body {
     overflow-x: hidden;
     position: relative;
-    background-color: black;
+    background-color: #252525;
     height: 100%;
   }
 }

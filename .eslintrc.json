@@ -25,6 +25,10 @@
         "react/button-has-type": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "jsx-a11y/no-static-element-interactions": "off",
-        "jsx-a11y/click-events-have-key-events": "off"
+        "jsx-a11y/click-events-have-key-events": "off",
+        "implicit-arrow-linebreak": "off",
+        "no-nested-ternary": "off",
+        "no-confusing-arrow": "off",
+        "react/jsx-one-expression-per-line": "off"
     }
 }
