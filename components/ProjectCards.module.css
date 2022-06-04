@@ -1,16 +1,39 @@
 .container {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw;
   /* display: flex; */
 }
 
 .container > ul {
   display: inline-block;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 0;
   margin: 0;
   /* width: 100vw; */
+}
+
+.end-3-l {
+  margin-left: calc((100vw - 1128px) / 2)
+}
+
+.end-3-r {
+  margin-right: calc((100vw - 1128px) / 2)
+}
+
+.end-2-l {
+  margin-left: calc((100vw - 752px) / 2)
+}
+
+.end-2-r {
+  margin-right: calc((100vw - 752px) / 2)
+}
+
+.end-1 {
+  margin-left: calc((100vw - 376px) / 2);
+  margin-right: calc((100vw - 376px) / 2);
 }
 
 .container > ul > li {
@@ -18,3 +41,4 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
