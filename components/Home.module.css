@@ -29,6 +29,7 @@
 
 .line {
   border: white 0.7px solid;
+  background-color: white;
   width: 450px;
   margin-left: 0;
   margin-top: 1.3rem;
