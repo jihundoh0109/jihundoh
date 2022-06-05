@@ -1,28 +1,4 @@
-.btn-scroll {
-  border: 2px solid white;
-  width: 30px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-.btn-scroll-left:hover, .btn-scroll-right:hover {
-  filter: invert(35%) sepia(68%) saturate(380%) hue-rotate(107deg) brightness(88%) contrast(91%);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.left-up {
-  transform: rotate(-45deg);
-}
-
-.left-down {
-  transform: rotate(45deg) translateX(10.2px) translateY(11px);
-}
-
-.right-up {
-  transform: rotate(45deg);
-}
-
-.right-down {
-  transform: rotate(-45deg) translateX(-10.2px) translateY(11px);
+.container {
+  display: flex;
+  justify-content: center;
 }

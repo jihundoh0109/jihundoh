@@ -1,4 +1,6 @@
 import React from 'react';
+import { ScrollMenu } from 'react-horizontal-scrolling-menu';
+import { LeftArrow, RightArrow } from './Arrows';
 import classes from './ProjectCards.module.css';
 import ProjectCard from './ProjectCard';
 import projects from '../data/projects.json';
@@ -7,27 +9,23 @@ function ProjectCards() {
   return (
     <div>
       <div className={classes.container}>
-        <div className={classes['btn-scroll-left']}>
-          <div className={`${classes['btn-scroll']} ${classes['left-up']}`} />
-          <div className={`${classes['btn-scroll']} ${classes['left-down']}`} />
-        </div>
-        <div className={classes['btn-scroll-right']}>
-          <div className={`${classes['btn-scroll']} ${classes['right-up']}`} />
-          <div className={`${classes['btn-scroll']} ${classes['right-down']}`} />
-        </div>
-        <div className={classes['scroll-container']}>
+        <ScrollMenu
+          LeftArrow={LeftArrow}
+          RightArrow={RightArrow}
+          className={classes['scroll-bar']}
+        >
           {projects.map((data) => (
-            <div className={classes.projectcard}>
-              <ProjectCard
-                key={data.title}
-                title={data.title}
-                img={data.img}
-                tools={data.tools}
-                description={data.description}
-              />
-            </div>
+            <ProjectCard
+              className={classes.project}
+              key={data.title}
+              itemId={data.title}
+              title={data.title}
+              img={data.img}
+              tools={data.tools}
+              description={data.description}
+            />
           ))}
-        </div>
+        </ScrollMenu>
       </div>
     </div>
   );

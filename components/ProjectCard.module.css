@@ -5,6 +5,7 @@
   border-radius: 15px;
   color: black;
   display: inline-block;
+  margin: 0 50px;
 }
 
 .card:hover {
@@ -41,4 +42,24 @@
   margin: 0;
   font-size: 13px;
   white-space: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 230px;
+    height: 360px;
+    /* margin: 0 25px; */
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .tools {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 11.5px;
+  }
 }
