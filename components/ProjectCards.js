@@ -8,10 +8,12 @@ import projects from '../data/projects.json';
 function ProjectCards() {
   return (
     <div>
+      <h1 className={classes.header}>/projects</h1>
       <div className={classes.container}>
         <ScrollMenu
           LeftArrow={LeftArrow}
           RightArrow={RightArrow}
+          transitionDuration={1200}
           className={classes['scroll-bar']}
         >
           {projects.map((data) => (
