@@ -7,16 +7,10 @@ import icon from '../public/favicon.ico';
 // navigation bar
 function Navigation() {
   const [menuIconClicked, setMenuIconClicked] = useState(false);
-  const [lightModeClicked, setLightModeClicked] = useState(false);
 
   // when user clicks menu icon (for screen size < 600px)
   const onMenuIconClick = () => {
     setMenuIconClicked(!menuIconClicked);
-  };
-
-  // when user clicks on toggle switch to change theme (dark/light mode)
-  const onLightModeClicked = () => {
-    setLightModeClicked(!lightModeClicked);
   };
 
   return (

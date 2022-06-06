@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/srl4nxi.css");
 
-html,
 body {
   font-family: 'proxima-nova', monospace;
   padding: 0;
@@ -8,7 +7,11 @@ body {
   font-weight: 200;
   font-style: normal;
   color: white;
-  /* animation: hide-scroll 1s; */
+  height: 100vh;
+}
+
+body > div {
+  height: 100%;
 }
 
 a {
@@ -38,13 +41,6 @@ a {
     height: 100%;
   }
 }
-
-/* @keyframes hide-scroll {
-  from,
-  to {
-    overflow: hidden;
-  }
-} */
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
   display: none;
