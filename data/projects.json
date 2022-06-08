@@ -1,14 +1,14 @@
 [
   {
-    "title": "Project 1",
-    "img": "/dummy_img.jpg",
-    "tools": "React, Java, HTML",
+    "title": "Personal Website",
+    "img": "/website.png",
+    "tools": "Next.js, React.js, Javascript, CSS",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
-    "title": "Project 2",
-    "img": "/dummy_img.jpg",
-    "tools": "React, Java, HTML",
+    "title": "Java Snake",
+    "img": "/snake.png",
+    "tools": "Java, Swing, JUnit, File I/O",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   {
