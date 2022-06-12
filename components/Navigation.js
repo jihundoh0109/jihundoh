@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import classes from './Navigation.module.css';
@@ -6,6 +7,13 @@ import icon from '../public/favicon.ico';
 
 // navigation bar
 function Navigation() {
+  const router = useRouter();
+  function style(route) {
+    return {
+      color: router.asPath === route ? '#44D3AC' : 'white',
+    };
+  }
+
   const [menuIconClicked, setMenuIconClicked] = useState(false);
 
   // when user clicks menu icon (for screen size < 600px)
@@ -19,28 +27,28 @@ function Navigation() {
         <Image src={icon} alt="image" width="40px" height="40px" />
       </a>
       <ul className={menuIconClicked ? classes.collapsemenu : classes.menu} id="menu">
-        <li>
+        <li style={style('/')}>
           <Link href="/">
             <a>
               Home
             </a>
           </Link>
         </li>
-        <li>
+        <li style={style('/about')}>
           <Link href="/about">
             <a>
               About
             </a>
           </Link>
         </li>
-        <li>
+        <li style={style('/projects')}>
           <Link href="/projects">
             <a>
               Projects
             </a>
           </Link>
         </li>
-        <li>
+        <li style={style('/blogs')}>
           <Link href="/blogs">
             <a>
               Blogs

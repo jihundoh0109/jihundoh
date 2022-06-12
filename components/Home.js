@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className={classes.container}>
       <div className={classes['col-one']}>
-        <h1 className={classes.name}>Jihun Doh</h1>
+        <h1 className={classes.name}>James Doh</h1>
         <h3 className={classes.subtitle}>Full Stack Developer</h3>
         <hr className={classes.line} />
         <div className={classes.buttons}>

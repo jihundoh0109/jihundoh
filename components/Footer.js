@@ -15,7 +15,7 @@ function Footer() {
         Next.js
       </a>
       {' '}
-      by Jihun Doh © 2022
+      by James Doh © 2022
     </div>
   );
 }
