@@ -50,7 +50,7 @@ function Navigation() {
         </li>
         <li style={style('/resume')}>
           <Link href="dummy_resume.pdf">
-            <a target="_blank">
+            <a>
               Resumé
             </a>
           </Link>
