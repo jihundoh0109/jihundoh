@@ -27,13 +27,6 @@ function Navigation() {
         <Image src={icon} alt="image" width="40px" height="40px" />
       </a>
       <ul className={menuIconClicked ? classes.collapsemenu : classes.menu} id="menu">
-        <li style={style('/')}>
-          <Link href="/">
-            <a>
-              Home
-            </a>
-          </Link>
-        </li>
         <li style={style('/about')}>
           <Link href="/about">
             <a>
@@ -52,6 +45,13 @@ function Navigation() {
           <Link href="/blogs">
             <a>
               Blogs
+            </a>
+          </Link>
+        </li>
+        <li style={style('/resume')}>
+          <Link href="/resume">
+            <a>
+              Resumé
             </a>
           </Link>
         </li>

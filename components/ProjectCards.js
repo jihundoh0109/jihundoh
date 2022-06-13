@@ -25,6 +25,7 @@ function ProjectCards() {
               img={data.img}
               tools={data.tools}
               description={data.description}
+              url={data.url}
             />
           ))}
         </ScrollMenu>
