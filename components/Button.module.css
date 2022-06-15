@@ -8,29 +8,63 @@
 .github-button,
 .linkedin-button,
 .email-button {
-  padding: 0;
+  display: inline-block;
+}
+
+.github-button>button,
+.linkedin-button>button,
+.email-button>button {
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .github-button {
+  width: 145px;
+  margin-right: 1.3rem;
+}
+
+.github-button > button {
   background-color: white;
   border: white;
-  margin-right: 1.3rem;
   width: 145px;
   color: black;
 }
 
 .linkedin-button {
+  width: 105px;
+  margin-right: 1.3rem;
+}
+
+.linkedin-button > button {
   background-color: #0274b3;
   border: #0274b3;
   color: white;
-  margin-right: 1.3rem;
   width: 105px;
+  border-radius: 7px;
 }
 
 .email-button {
+  width: 93px;
+}
+
+.email-button > button {
   background-color: #CCB764;
   border: #CCB764;
   width: 93px;
   color: black;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 890px) {
+  .github-button, .linkedin-button, .email-button {
+    margin-right: 0;
+    width: 200px;
+    margin-top: 1rem;
+  }
+
+  .github-button > button,
+  .linkedin-button > button,
+  .email-button > button {
+    width: 200px;
+  }
 }

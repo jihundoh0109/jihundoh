@@ -15,8 +15,8 @@ function Button({
         <script src="https://kit.fontawesome.com/4a122d335f.js" crossOrigin="anonymous" />
       </Head>
       <Link href={url} passHref>
-        <a target="_blank" rel="noreferrer">
-          <button className={classes[buttonClass]}>
+        <a target="_blank" rel="noreferrer" className={classes[buttonClass]}>
+          <button>
             <div className={classes['image-wrapper']}>
               {logo}
               <span>{buttonText}</span>
