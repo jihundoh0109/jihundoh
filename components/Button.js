@@ -1,26 +1,30 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import classes from './Button.module.css';
 
 function Button({
   url,
-  img,
+  logo,
   buttonClass,
-  logoClass,
   buttonText,
 }) {
   return (
-    <Link href={url} passHref>
-      <a target="_blank" rel="noreferrer">
-        <button className={classes[buttonClass]}>
-          <div className={classes['image-wrapper']}>
-            <Image className={classes[logoClass]} src={img} alt={logoClass} width="25px" height="25px" />
-            <span>{buttonText}</span>
-          </div>
-        </button>
-      </a>
-    </Link>
+    <>
+      <Head>
+        <script src="https://kit.fontawesome.com/4a122d335f.js" crossOrigin="anonymous" />
+      </Head>
+      <Link href={url} passHref>
+        <a target="_blank" rel="noreferrer">
+          <button className={classes[buttonClass]}>
+            <div className={classes['image-wrapper']}>
+              {logo}
+              <span>{buttonText}</span>
+            </div>
+          </button>
+        </a>
+      </Link>
+    </>
   );
 }
 
