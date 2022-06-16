@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Main from '../components/About/Main';
 
 function About() {
   return (
@@ -11,6 +12,7 @@ function About() {
         <meta name="description" content="" />
         <meta name="author" content="Jihun Doh" />
       </Head>
+      <Main />
     </div>
   );
 }

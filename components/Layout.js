@@ -5,7 +5,7 @@ import classes from './Layout.module.css';
 
 function Layout({ children }) {
   return (
-    <div className={classes.body}>
+    <div className={classes.container}>
       <Navigation />
       <main>{children}</main>
       <Footer />

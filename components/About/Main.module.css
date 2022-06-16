@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.headshot {
+  border-radius: 50%;
+}
+
+.summary {
+  text-align: center;
+  font-size: 17px;
+  width: 33%;
+}
+
+.penn-link {
+  color: #44D3AC;
+}
+
+@media screen and (max-width: 1428px) {
+  .summary {
+    width: 40%;
+  }
+}
